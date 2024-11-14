@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>calcolatrice</title>
+
+<body>
+<h2><b>CALCOLATRICE</b></h2>
+
+<script >
+  function addizione() {  
+  let a = parseFloat(document.getElementById("op1").value);   
+  let b = parseFloat(document.getElementById("op2").value);   
+  let c = a+b;
+  document.getElementById("ris").innerHTML  =   c  ; 
+}
+function sottrazione() {  
+  let a = parseFloat(document.getElementById("op1").value);   
+  let b = parseFloat(document.getElementById("op2").value);   
+  let c = a-b;
+  document.getElementById("ris").innerHTML  =   c  ; 
+}
+function moltiplicazione() {  
+  let a = parseFloat(document.getElementById("op1").value);   
+  let b = parseFloat(document.getElementById("op2").value);   
+  let c = a*b;
+  document.getElementById("ris").innerHTML  =   c  ; 
+}
+function divisione() {  
+  let a = parseFloat(document.getElementById("op1").value);   
+  let b = parseFloat(document.getElementById("op2").value);   
+  let c = a/b;
+  document.getElementById("ris").innerHTML  =   c  ; 
+}
+</script>
+
+<table>
+<tr> <td> operando 1 : </td> <td> <input type="text" id="op1" size="10"> </td> </tr>
+<tr> <td> operando 2 :</td> <td> <input type="text" id="op2" size="10"> </td> </tr>
+<tr> <td> risultato  :</td>  <td id="ris">  </td> </tr>
+</table>
+
+<p>  <input type="button" value="SOMMA" id="B3" onClick="addizione();">
+     <input type="button" value="SOTTRAZIONE" id="B3" onClick="sottrazione();">
+     <input type="button" value="MOLTIPLICAZIONE" id="B3" onClick="moltiplicazione();">
+     <input type="button" value="DIVISIONE" id="B3" onClick="divisione();">
+</html>
